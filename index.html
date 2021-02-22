@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link href="themes/prism.css" rel="stylesheet" />
+  <title>CV</title>
+</head>
+
+<body class="page">
+  <div class="wrapper">
+    <script src="./themes/prism.js"></script>
+    <section class="about">
+      <h1 class="page-title">JUNIOR FRONTEND DEVELOPER</h1>
+      <h2 class="section-title">Gudinskaya Anna</h2>
+      <img src="./images/me.jpg" alt="me" class="image">
+      <div class="contacts">
+        <a class="link" href="https://t.me/ccaras">Telegram</a>
+        &nbsp;<span>|</span>&nbsp;
+        <a class="link" href="mailto:ann.gudin@gmail.com?subject=Job%20opportunity">Email</a>
+      </div>
+    </section>
+    <section class="summary">
+      <h2 class="section-title">SUMMARY</h2>
+      <span>______</span>
+      <p class="text">I started developing in September 2017.
+        That was the year when I entered BSUIR (Belarussian State University of Informatics and Radioelectronics).
+        First thing first, I set up Linux Fedora.
+        I started developing using Visual Studio Code and Bаsh to run my code manually in terminal,
+        without any IDE from the very beginning.
+        My first programming language was C, I was learning it dyring the 1st term.
+        In the 2nd term we could choose between C and C++,
+        but I was in love with pure C and continued developing using it.
+        In the 3rd term I started learning Java and OOP.
+        And since that time all our labs in university were on it.
+        Then I started to work on Mac OS, but the other environment was the same, I still used VS Code and terminal to run
+        my code. Then I started learning front-end (React.js actually) and I wrote a landing page using it. After the first successfull
+        project on React.js I started seaching for a job, but I didn't know pure js, css, and html as well as employers requared.
+        During the search I wrote some other small projects on React.js. After that I entered rs-school and stydied there till New Year Eve.
+        I passed the interview successfully and got a mentor. But I didn't finished the course because of exams in my University,
+        it was the last term with lots of exams.</p>
+    </section>
+    <section class="skills">
+      <h2 class="section-title">SKILLS</h2>
+      <span>______</span>
+      <ul class="text">
+        <li class="item">JS (ES6)</li>
+        <li class="item">React.js</li>
+        <li class="item">CSS</li>
+        <li class="item">HTML</li>
+        <li class="item">Git</li>
+        <li class="item">Webpack</li>
+      </ul>
+    </section>
+    <section class="code-examples">
+      <h2 class="section-title">CODE EXAMPLES</h2>
+      <span class="line">______</span>
+      <h3 class="section-subtitle">Primality test</h3>
+      <div class="code">
+        <pre>
+          <code class="language-javascript">
+  const isPrime = (n) => {
+    if (n < 2) {
+      return false
+    }
+  
+    let i = 2
+  
+    while (i * i <= n) {
+      if (n % i === 0) {
+        return false
+      }
+      i += 1
+    }
+    return true
+  }       </code>
+        </pre>
+      </div>
+      <h3 class="section-subtitle">Algorithm that finds greatest common divisor</h3>
+      <div class="code">
+        <pre>
+          <code class="language-javascript">
+  const mygcd = (x, y) => {
+    let x1 = x
+    let y1 = y
+    while (y1 != 0) {
+      const tmp = x1
+      x1 = y1
+      y1 = tmp % y1
+    }
+    return x1
+  }     </code>
+        </pre>
+    </section>
+    <section class="experience">
+      <h2 class="section-title">EXPERIENCE</h2>
+      <span class="line">______</span>
+      <div class="experience__container">
+        <div class="expetience__year">
+          <h3 section-subtitle>2019</h3>
+          <p class="text">
+            Trainee Front-end
+            <br>
+            Highload LTD under NDA
+            <br>
+            Landing page that I was developing is <a href="https://highload.ltd/">here</a>
+          </p>
+          <p class="list">Responsibilities:</p>
+          <ul class="list">
+            <li>Developing landing page front-end part</li>
+            <li>Correcting design</li>
+          </ul>
+        </div>
+        <div class="expetience__year">
+          <h3 section-subtitle>2020</h3>
+          <p class="list">React Projects:</p>
+          <ul class="list">
+            <li><a href="https://github.com/gudinskaya/astronomy">Astronomy Picture of the Day</a> (React.js) also on <a
+                href="https://gudinskaya.github.io/astronomy/">GitHub Pages</a></li>
+            <li><a href="https://github.com/gudinskaya/todo-list">Todo-list</a> (TypeScript + React.js)</li>
+            <li><a href="https://github.com/gudinskaya/vanil-js">Vanil JS</a></li>
+          </ul>
+          <p class="list">RS-School Projects:</p>
+          <ul class="list">
+            <li><a href="https://github.com/gudinskaya/english-for-kids">English for kids</a> (js with Webpack) also on <a
+                href="https://rolling-scopes-school.github.io/gudinskaya-JS2020Q3/english-for-kids/">GitHub Pages</a></li>
+            <li><a href="https://github.com/gudinskaya/shelter">Shelter</a> (pixel perfect with js) also on <a
+                href="https://rolling-scopes-school.github.io/gudinskaya-JS2020Q3/shelter/pages/main/main.html">GitHub Pages</a></li>
+            <li><a href="https://github.com/gudinskaya/gem-puzzle">Gem-puzzle</a> (js) also on <a
+                href="https://rolling-scopes-school.github.io/gudinskaya-JS2020Q3/gem-puzzle/">GitHub Pages</a></li>
+            <li><a href="https://github.com/gudinskaya/momentum">Momentum</a> (js) also on <a
+                href="https://rolling-scopes-school.github.io/gudinskaya-JS2020Q3/momentum/">GitHub Pages</a></li>
+            <li><a href="https://github.com/gudinskaya/keyboard">Keyboard</a> (js) also on <a
+                href="https://rolling-scopes-school.github.io/gudinskaya-JS2020Q3/keyboard/">GitHub Pages</a></li>
+            <li><a href="https://github.com/gudinskaya/webdev">Webdev</a> (pixel perfect) also on <a
+                href="https://rolling-scopes-school.github.io/gudinskaya-JS2020Q3/webdev/">GitHub Pages</a></li>
+            <li><a href="https://github.com/gudinskaya/calculator-js">Calculator</a> (js) also on <a
+                href="https://rolling-scopes-school.github.io/gudinskaya-JS2020Q3/calculator/">GitHub Pages</a></li>
+          </ul>
+        </div>
+      </div>
+  
+    </section>
+    <div class="edication-english-container">
+      <section class="education">
+        <h2 class="section-title">EDUCATION</h2>
+        <span class="line">______</span>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Place</th>
+              <th>Period</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>BSUIR</td>
+              <td>2017 - now</td>
+            </tr>
+            <tr>
+              <td>Highload LTD</td>
+              <td>July 2019</td>
+            </tr>
+            <tr>
+              <td>RS-School</td>
+              <td>Fall 2020</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="english">
+        <h2 class="section-title">ENGLISH</h2>
+        <span class="line">______</span>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Kind</th>
+              <th>Period</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Working in Space and Emerge with speakers</td>
+              <td>June 2019 - January 2020</td>
+            </tr>
+            <tr>
+              <td>Living in Holland with my friend</td>
+              <td>November 2019</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+    <section class="contacts-wrapper">
+      <h2 class="section-title">CONTACTS</h2>
+      <span class="line">______</span>
+      <div class="contacts-footer">
+        <a class="icon-wrapper" href="https://github.com/gudinskaya"><img class="icon" src="./images/github-logo.svg" alt="github"></a>
+        <a class="icon-wrapper" href="https://t.me/ccaras"><img class="icon" src="./images/Telegram_logo.svg" alt="github"></a>
+        <a class="icon-wrapper" href="mailto:ann.gudin@gmail.com?subject=Job%20opportunity"><img class="icon" src="./images/Gmail_icon_(2020).svg" alt="github"></a>
+      </div>
+    </section>
+  </div>
+  
+</body>
+
+</html>
